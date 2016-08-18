@@ -1,0 +1,689 @@
+<div class="formtable">
+
+
+
+    <form angular-validator-submit="payslipform2()" role="form" id="payslipform" name="payslipform" novalidate angular-validator>
+
+        <div class="form-group form-padding">
+            <label>Name</label>
+            <input  type="text" class="form-control" name="fullname" ng-model="form.fullname"
+                    required-message="'Name can not be blank.'"
+                    required>
+        </div>
+          <div class="form-group form-padding">
+               <label>Email</label>
+               <input  type="text" class="form-control" name="email" ng-model="form.email"
+                      required-message="'Email can not be blank.'"
+                      invalid-message="'Enter valid email address.'"
+                      required>
+           </div>
+           <div class="form-group form-padding">
+               <label>Company Name</label>
+               <input type="text" class="form-control"  ng-model="form.company_name" name="company_name"
+                      required-message="'Company name can not be blank'"
+                      required >
+               </div>
+           <div class="form-group">
+               <label>Designation</label>
+               <input type="text" class="form-control" ng-model="form.designation"
+                      name="designation"
+                      required-message="'Designation can not be blank'" required>
+
+           </div>
+           <div class="form-group">
+               <label>Employee Number</label>
+               <input type="text" class="form-control"  name="employee_no" ng-model="form.employee_no"
+
+                      required-message="'Employee number  can not be blank'"
+                  required>
+               </div>
+           <div class="form-group">
+               <label>Locaton</label>
+               <input type="text" class="form-control"  name="location" ng-model="form.location"
+
+                      required-message="'Location can not be blank'"
+                      required>
+           </div>
+           <div class="form-group">
+               <label>Basic</label>
+               <input type="text" class="form-control"  name="basic" ng-model="form.basic"
+
+                      required-message="'Basic can not be blank'"
+                      required>
+           </div>
+
+           <div class="form-group">
+               <label>Employee's PF/PPF</label>
+               <input type="text" class="form-control"  name="pf_ppf" ng-model="form.pf_ppf"
+
+                      required-message="'Basic can not be blank'"
+                      required>
+           </div>
+           <div class="form-group">
+               <label>Chapter VI (Form 12 A)</label>
+               <input type="text" class="form-control"  name="chaptersix" ng-model="form.chaptersix">
+
+           </div>
+           <div class="form-group">
+               <label>HRA</label>
+               <input type="text" class="form-control"  name="hra" ng-model="form.hra"
+                required-message="'HRA  can not be blank'"
+                required
+               >
+
+           </div>
+           <div class="form-group">
+               <label>Employees ESIC</label>
+               <input type="text" class="form-control"  name="employee_esic" ng-model="form.employee_esic"
+                required-message="'Employee esic can not be blank'"
+                required
+               >
+
+           </div>
+           <div class="form-group">
+               <label>Conveyance Allowance</label>
+               <input type="text" class="form-control"  name="conveyanceallowance" ng-model="form.conveyanceallowance"
+               required-message="'Conveyance allowance can not be blank'"
+               required
+               >
+
+           </div>
+           <div class="form-group">
+               <label>Professional Tax</label>
+               <input type="text" class="form-control"  name="professiontax" ng-model="form.professiontax"
+               required-message="'Professional tax can not be blank'"
+               required
+               >
+
+           </div>
+           <div class="form-group">
+               <label>Prof. Development Allowance</label>
+               <input type="text" class="form-control"  name="pda" ng-model="form.pda" >
+
+           </div>
+           <div class="form-group">
+               <label>Income Tax</label>
+               <input type="text" class="form-control"  name="incometax" ng-model="form.incometax" >
+
+           </div>
+           <div class="form-group">
+               <label>Books and Periodicals</label>
+               <input type="text" class="form-control"  name="booksandperiodicals" ng-model="form.booksandperiodicals" >
+
+           </div>
+           <div class="form-group">
+               <label>LTA (Deduction)</label>
+               <input type="text" class="form-control"  name="lta_deduction" ng-model="form.lta_deduction" >
+
+           </div>
+           <div class="form-group">
+               <label>Medical Reimbursement</label>
+               <input type="text" class="form-control"  name="medical_reimbursement" ng-model="form.medical_reimbursement" >
+
+           </div>
+           <div class="form-group">
+               <label>Festival Bonus (Deduction)</label>
+               <input type="text" class="form-control"  name="festive_bonus_deduction" ng-model="form.festive_bonus_deduction" >
+
+           </div>
+           <div class="form-group">
+               <label>Child Education Allowance</label>
+               <input type="text" class="form-control"  name="child_education_allowance" ng-model="form.child_education_allowance" >
+
+           </div>
+           <div class="form-group">
+               <label>Medical Insurance Premium (Annual Benefit)</label>
+               <input type="text" class="form-control"  name="medical_insurance_premium" ng-model="form.medical_insurance_premium" >
+
+           </div>
+           <div class="form-group">
+               <label>Special Allowance</label>
+               <input type="text" class="form-control"  name="special_allowance" ng-model="form.special_allowance" >
+
+           </div>
+           <div class="form-group">
+               <label>Other Deductions</label>
+               <input type="text" class="form-control"  name="other_deduction" ng-model="form.other_deduction" >
+
+           </div>
+          <div class="form-group">
+               <label>Entertainment Allowance</label>
+               <input type="text" class="form-control"  name="entertainment_allowance" ng-model="form.entertainment_allowance" >
+
+           </div>
+          <div class="form-group">
+               <label>Misc. Deduction</label>
+               <input type="text" class="form-control"  name="misc_deduction" ng-model="form.misc_deduction" >
+
+           </div>
+          <div class="form-group">
+               <label>Other Allowance</label>
+               <input type="text" class="form-control"  name="other_allowance" ng-model="form.other_allowance" >
+
+           </div>
+          <div class="form-group">
+               <label>Variable Pay</label>
+               <input type="text" class="form-control"  name="variable_pay" ng-model="form.variable_pay" >
+
+           </div>
+         <div class="form-group">
+               <label>LTA (Annual Benefit)</label>
+               <input type="text" class="form-control"  name="lta_annual_benefit" ng-model="form.lta_annual_benefit" >
+
+           </div>
+         <div class="form-group">
+               <label>Festival Bonus (Annual Benefit)</label>
+               <input type="text" class="form-control"  name="festival_bonus" ng-model="form.festival_bonus" >
+
+           </div>
+         <div class="form-group">
+               <label>Medical Insurance Premium (Annual Benefit)</label>
+               <input type="text" class="form-control"  name="medical_insurance_premium_annual_benefit" ng-model="form.medical_insurance_premium_annual_benefit" >
+
+           </div>
+        <div class="form-group">
+               <label>Arrear</label>
+               <input type="text" class="form-control"  name="arrear" ng-model="form.arrear" >
+
+           </div>
+        <div class="form-group">
+               <label>Pay out Month</label>
+               <input type="text" class="form-control"  name="payout_month" ng-model="form.payout_month" ng-keydown="open11()" ng-keypress="open11()" ng-keyup="open11()" ng-focus="open11()" ng-blur="setDate1()" min-date="minDate1" show-weeks="false" close-text="Close" ng-required="false" is-open="opened1" uib-datepicker-popup="MM/dd/yyyy" class="searchbox2 ng-pristine ng-untouched ng-valid ng-isolate-scope ng-valid-date ng-valid-required"   >
+
+           </div>
+        <div class="form-group">
+               <label>Bank Name</label>
+               <input type="text" class="form-control"  name="bank_name" ng-model="form.bank_name" >
+
+           </div>
+        <div class="form-group">
+               <label>A/C Number</label>
+               <input type="text" class="form-control"  name="account_number" ng-model="form.account_number" >
+
+           </div>
+        <div class="form-group">
+               <label>Earnings</label>
+               <input type="text" class="form-control"  name="earnings" ng-model="form.earnings" >
+
+           </div>
+        <div class="form-group">
+               <label>Deductions</label>
+               <input type="text" class="form-control"  name="deductions" ng-model="form.deductions" >
+
+           </div>
+        <div class="form-group">
+               <label>Adjustments</label>
+               <input type="text" class="form-control"  name="adjustments" ng-model="form.adjustments" >
+
+           </div>
+           <div class="form-group">
+               <label>Take Home Pay</label>
+               <input type="text" class="form-control"  name="take_home_pay" ng-model="form.take_home_pay" >
+
+           </div>
+
+            <input type="submit" value="Submit"  class="subbtn"/>
+    </form>
+
+
+
+
+<!--
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="formtable1">
+
+
+
+
+
+      <tr>
+
+        <td  style="background:#fff;">Name:</td>
+
+        <td>
+            <div class="form-group">
+            <input validate-on="submit" type="text" class="form-control" name="name" ng-model="form.name"
+                   required-message="'Name can not be blank.'"
+                   required>
+            </div>
+        </td>
+        <td  style="background:#fff;">Company: </td>
+
+        &lt;!&ndash;<td ><strong>Kalyani Technology Academy</strong></td>&ndash;&gt;
+        <td>
+            <div class="form-group">
+            <input type="text" class="form-control"  ng-model="form.company_name" name="company_name"
+                    required-message="'Company name can not be blank'"
+                    required >
+
+            </div>
+        </td>
+
+         <td  style="background:#fff;">Designation:  </td>
+
+        <td>
+            <div class=""form-group>
+            <input type="text" ng-model="form.designation"
+        name="designation"
+        required-messge="'Designation can not be blank'"required
+        >
+            </div>
+        </td>
+
+     </tr>
+
+      <tr>
+
+        <td  style="background:#fff; border-bottom:solid 1px #000;">Employee No:</td>
+
+        <td style="border-bottom:solid 1px #000;"><input type="text" ng-model="form.employee_no"
+        name="employee_no"
+        requird-message="'Employee  number    can not be blank'"
+        required
+        ></td>
+
+        <td  style="background:#fff; border-bottom:solid 1px #000;">Department: </td>
+
+       &lt;!&ndash; <td style="border-bottom:solid 1px #000;"><strong>IT</strong></td>&ndash;&gt;
+        <td style="border-bottom:solid 1px #000;">
+            <input type="text" name="department" ng-model="form.department"
+                   required-message="'Department can not be blank'"
+                   required
+        ></td>
+
+         <td  style="background:#fff; border-bottom:solid 1px #000;">Location:  </td>
+
+        <td style="border-bottom:solid 1px #000;"><input type="text" ng-model="location"></td>
+
+     </tr>
+
+
+
+
+
+
+
+      <tr>
+
+        <td style="background:#e3e4e5;">Basic:</td>
+
+        <td><input type="text" ng-model="basic"></td>
+
+        <td style="background:#e3e4e5;">Employee's PF/PPF: </td>
+
+        <td><input type="text" ng-model="ppf"></td>
+
+            <td style="background:#e3e4e5;">Chapter VI (Form 12 A)</td>
+
+        <td><input type="text" ng-model="chapter"></td>
+
+     </tr>
+
+
+
+
+
+      <tr>
+
+        <td style="background:#e3e4e5;">HRA:</td>
+
+        <td><input type="text" ng-model="hra"></td>
+
+        <td style="background:#e3e4e5;">Employees ESIC: </td>
+
+        <td><input type="text" ng-model="esic"></td>
+
+        <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+
+
+      <tr>
+
+        <td style="background:#e3e4e5;">Conveyance Allowance:</td>
+
+        <td><input type="text" ng-model="conveyanceallowance"></td>
+
+        <td style="background:#e3e4e5;">Professional Tax: </td>
+
+        <td><input type="text" ng-model="professionaltax"></td>
+
+        <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+      <tr>
+
+        <td style="background:#e3e4e5;">Prof. Development Allowance:</td>
+
+        <td><input type="text" ng-model="Prof"></td>
+
+        <td style="background:#e3e4e5;">Income Tax: </td>
+
+        <td><input type="text" ng-model="incometax"></td>
+
+      <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+
+
+       <tr>
+
+        <td style="background:#e3e4e5;">Books and Periodicals:</td>
+
+        <td><input type="text" ng-model="bap"></td>
+
+        <td style="background:#e3e4e5;">LTA (Deduction): </td>
+
+        <td><input type="text" ng-model="lta"></td>
+
+        <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+
+
+
+
+       <tr>
+
+        <td style="background:#e3e4e5;">Medical Reimbursement:</td>
+
+        <td><input type="text" ng-model="medical"></td>
+
+        <td style="background:#e3e4e5;">Festival Bonus (Deduction): </td>
+
+        <td ><input type="text" ng-model="festival"></td>
+
+      <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+
+
+       <tr>
+
+        <td style="background:#e3e4e5;">Child Education Allowance:</td>
+
+        <td><input type="text" ng-model="cea"></td>
+
+        <td style="background:#e3e4e5;">Medical Insurance Premium (Annual Benefit): </td>
+
+        <td><input type="text" ng-model="medicalinsurance"></td>
+
+        <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+      <tr>
+
+        <td style="background:#e3e4e5;">Special Allowance:</td>
+
+        <td><input type="text" ng-model="specialallowance"></td>
+
+        <td style="background:#e3e4e5;">Other Deductions: </td>
+
+        <td><input type="text" ng-model="otherdeductions"></td>
+
+       <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+       <tr>
+
+        <td style="background:#e3e4e5;">Entertainment Allowance:</td>
+
+        <td><input type="text" ng-model="entertainment"></td>
+
+        <td style="background:#e3e4e5;">Misc. Deduction: </td>
+
+        <td><input type="text" ng-model="miscdeduction"></td>
+
+       <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+
+
+       <tr>
+
+        <td style="background:#e3e4e5;">Other Allowance:</td>
+
+        <td><input type="text" ng-model="otherallowanc"></td>
+
+        <td style="background:#e3e4e5;">&nbsp;</td>
+
+      <td>&nbsp;</td>
+
+        <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+
+
+
+
+      <tr>
+
+        <td style="background:#e3e4e5;">Variable Pay:</td>
+
+        <td><input type="text" ng-model="variablepay"></td>
+
+      <td style="background:#e3e4e5;">&nbsp;</td>
+
+      <td>&nbsp;</td>
+
+       <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+       <tr>
+
+        <td style="background:#e3e4e5;">LTA (Annual Benefit):</td>
+
+        <td><input type="text" ng-model="ltaallowanc"></td>
+
+        <td style="background:#e3e4e5;">&nbsp;</td>
+
+      <td>&nbsp;</td>
+
+       <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+      <tr>
+
+        <td style="background:#e3e4e5;">Festival Bonus (Annual Benefit):</td>
+
+        <td><input type="text" ng-model="festivalallowanc"></td>
+
+       <td style="background:#e3e4e5;">&nbsp;</td>
+
+      <td>&nbsp;</td>
+
+        <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+       <tr>
+
+        <td style="background:#e3e4e5;">Medical Insurance Premium (Annual Benefit)</td>
+
+        <td><input type="text" ng-model="medicalinsuranceallowanc"></td>
+
+        <td style="background:#e3e4e5;">&nbsp;</td>
+
+      <td>&nbsp;</td>
+
+        <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+
+
+       <tr>
+
+        <td style="background:#e3e4e5;">Arrear</td>
+
+        <td><input type="text" ng-model="arrear"></td>
+
+        <td style="background:#e3e4e5;">&nbsp;</td>
+
+      <td>&nbsp;</td>
+
+       <td style="background:#e3e4e5;">&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+     </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <tr>
+
+        <td  style="background:#0389e0; color:#fff;">Pay out Month:</td>
+
+        <td style="background:#0f99f2; "><input type="text" ng-model="pom"></td>
+
+        <td style="background:#0389e0; color:#fff;">Bank Name </td>
+
+       <td style="background:#0f99f2; "><input type="text" ng-model="bankname"></td>
+
+         <td style="background:#0389e0; color:#fff;">A/C Number:  </td>
+
+        <td style="background:#0f99f2; "><input type="text" ng-model="acnumber"></td>
+
+     </tr>
+
+
+
+
+
+      <tr>
+
+        <td  style="background:#0389e0; color:#fff;">Earnings:</td>
+
+        <td style="background:#0f99f2; "><input type="text" ng-model="earnings"></td>
+
+        <td  style="background:#0389e0; color:#fff;">Deductions:  </td>
+
+       <td style="background:#0f99f2; "><input type="text" ng-model="deductions "></td>
+
+         <td style="background:#0389e0; color:#fff;">Adjustments:  </td>
+
+        <td style="background:#0f99f2; "><input type="text" ng-model="Adjustments"></td>
+
+     </tr>
+
+
+
+
+
+
+
+     </table>
+
+
+
+
+
+
+
+
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding:15px 0;">
+
+      <tr>
+
+        <td width="9%">Take Home Pay</td>
+
+        <td width="17%"><input type="text" ng-model="takehomepay"></td>
+
+        <td width="74%">
+
+        <input type="submit" value="Submit"  class="subbtn"/>
+        </form>
+
+        </td>
+
+      </tr>
+
+    </table>
+
+-->
+
+
+
+
+
+
+
+
+
+</div>
+
